@@ -1,0 +1,6 @@
+type Receipt {
+  id: ID!
+  total: Float!
+  user: User!
+  items: [ReceiptItem!]!
+}

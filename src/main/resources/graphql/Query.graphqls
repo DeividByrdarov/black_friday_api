@@ -1,0 +1,7 @@
+type Query {
+  products: [Product!]!
+  users: [User!]!
+  receipts: [Receipt!]!
+  campaigns: [Campaign!]!
+  activeCampaign: Campaign
+}

@@ -1,0 +1,9 @@
+type Product {
+  id: ID!
+  name: String!
+  description: String!
+  price: Float!
+  minPrice: Float!
+  quantity: Int!
+  discount: Float
+}

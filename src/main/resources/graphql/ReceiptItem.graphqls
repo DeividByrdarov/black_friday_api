@@ -1,0 +1,9 @@
+input ReceiptItemInput {
+  amount: Int!
+  productId: String!
+}
+
+type ReceiptItem {
+  amount: Int!
+  product: Product!
+}

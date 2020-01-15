@@ -1,0 +1,23 @@
+type Mutation {
+  # Products
+  createProduct(name: String!, description: String!, price: Float!, minPrice: Float!, quantity: Int!): Product!
+  updateProduct(id: ID!, name: String!, description: String!, price: Float!, minPrice: Float!, quantity: Int!): Product!
+  deleteProduct(productId: String!): Boolean!
+
+  # User
+  createUser(name: String!, username: String!, password: String!, repeatPassword: String!, role: Role = "CUSTOMER"): User!
+  updateUser(id: ID!, name: String!, username: String!, role: Role): User!
+  deleteUser(userId: String!): Boolean!
+
+  # User Session
+  createUserSession(username: String!, password: String!): UserSession!
+  deleteUserSession(userSessionId: String!): Boolean!
+
+  # Receipt
+  createReceipt(userSessionId: String!, items: [ReceiptItemInput!]!): Receipt!
+
+  # Campaign
+  createCampaign(name: String!, description: String!, active: Boolean!, items: [DiscountItemInput!]!): Campaign!
+  updateCampaign(id: ID!, name: String!, description: String!, active: Boolean!, items: [DiscountItemInput!]!): Campaign!
+  deleteCampaign(campaignId: String!): Boolean!
+}

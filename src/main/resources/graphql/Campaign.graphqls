@@ -1,0 +1,7 @@
+type Campaign {
+  id: ID!
+  name: String!
+  description: String!
+  active: Boolean!
+  items: [DiscountItem!]!
+}

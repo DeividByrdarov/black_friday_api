@@ -1,0 +1,9 @@
+input DiscountItemInput {
+  discount: Float!
+  productId: String!
+}
+
+type DiscountItem {
+  discount: Float!
+  product: Product!
+}

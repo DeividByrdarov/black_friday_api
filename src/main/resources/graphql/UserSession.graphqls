@@ -1,0 +1,6 @@
+type UserSession {
+  id: ID!
+  user: User!
+  expireAt: DateTime!
+  createdAt: DateTime!
+}
